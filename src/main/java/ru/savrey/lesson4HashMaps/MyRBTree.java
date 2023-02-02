@@ -166,6 +166,13 @@ class Node{
     public void setRightChild(Node rightChild) {
         this.rightChild = rightChild;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder res = new StringBuilder("");
+        res.append(getValue()).append(" ").append(getColor());
+        return res.toString();
+    }
 }
 
 enum Color{
